@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'menu.page.dart';
 
 class Calculs extends StatefulWidget {
   const Calculs({super.key});
@@ -17,7 +18,7 @@ class _CalculsState extends State<Calculs> {
     if (operation == '-') return (_nombre1 - _nombre2).toDouble();
     if (operation == '*') return (_nombre1 * _nombre2).toDouble();
     if (operation == '/') {
-    if (_nombre2 == 0) {
+      if (_nombre2 == 0) {
         throw Exception("Division par zéro impossible");
       }
       return _nombre1 / _nombre2;
@@ -49,9 +50,15 @@ class _CalculsState extends State<Calculs> {
           'Calculs',
           style: TextStyle(fontSize: 45, color: Colors.green),
         ),
-        leading: Icon(Icons.calculate, size: 45, color: Colors.green),
+        leading: Builder(
+          builder: (context) => IconButton(
+            icon: Icon(Icons.menu, size: 45, color: Colors.green),
+            onPressed: () => Scaffold.of(context).openDrawer(),
+          ),
+        ),
         backgroundColor: Colors.amberAccent,
       ),
+      drawer: MenuPage(),
       body: Center(
         child: Container(
           padding: EdgeInsets.all(35),
