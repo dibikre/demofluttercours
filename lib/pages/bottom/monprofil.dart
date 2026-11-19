@@ -9,7 +9,7 @@ class MonProfil extends StatelessWidget {
   final String nomComplet = 'DIBI Kre Michael';
   final String filiere = 'SDDI4';
   final String classe = 'SDDI4 G2';
-  final String github = 'https://github.com/ton-pseudo';
+  final String github = 'https://github.com/dibikre/demofluttercours';
 
   // Une ligne d'information : icône, titre et valeur
   Widget _info(
