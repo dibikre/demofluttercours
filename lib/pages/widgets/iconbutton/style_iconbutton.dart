@@ -17,9 +17,6 @@ class StyleIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SectionCard(
       titre: 'Personnalisation',
-      description:
-          'Pour agrandir l\'icône, utilisez iconSize du bouton et non '
-          'Icon(size: ...), sinon la taille du bouton reste celle par défaut.',
       child: Wrap(
         spacing: 8,
         runSpacing: 16,

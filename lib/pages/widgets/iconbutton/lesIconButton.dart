@@ -40,9 +40,7 @@ class LesIconButton extends StatelessWidget {
         padding: EdgeInsets.all(16),
         children: [
           Text(
-            'Un IconButton est une icône qui réagit au toucher. '
-            'Il est souvent utilisé dans la barre du haut (AppBar.actions), '
-            'comme le bouton « i » en haut à droite de cette page.',
+            'Liste de quelques icones:\n',
             style: TextStyle(fontSize: 16),
           ),
           SizedBox(height: 16),

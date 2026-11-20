@@ -16,9 +16,6 @@ class _ContenuExtendedState extends State<ContenuExtended> {
   Widget build(BuildContext context) {
     return SectionCard(
       titre: 'Contenu : label, icon, isExtended',
-      description:
-          'label est obligatoire, icon est facultative. Avec isExtended: false, '
-          'seule l\'icône reste visible (elle devient donc nécessaire).',
       child: Wrap(
         spacing: 24,
         runSpacing: 16,

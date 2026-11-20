@@ -50,10 +50,7 @@ class _LesFabExtendedState extends State<LesFabExtended> {
           padding: EdgeInsets.fromLTRB(16, 16, 16, 96),
           children: [
             Text(
-              'FloatingActionButton.extended crée un FAB plus large, en forme de '
-              'stade, avec un label et une icône facultative. '
-              'Faites défiler la page : le bouton en bas à droite se réduit '
-              'vers le bas et se redéploie vers le haut.',
+              'Les FloatingActionButton.extended:\n',
               style: TextStyle(fontSize: 16),
             ),
             SizedBox(height: 16),

@@ -10,8 +10,6 @@ class TypesIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SectionCard(
       titre: 'Les 4 types',
-      description:
-          'Dans chaque cellule : actif à gauche, désactivé (onPressed: null) à droite.',
       child: GrilleVariantes(
         boutons: (i, variante) => [
           variante.construire(icon: Icon(Icons.filter_drama), onPressed: () {}),
