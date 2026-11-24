@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'calculs.page.dart';
 import 'widgets/leswidgets.dart';
+import 'TPs/les_tps.page.dart';
 
 // Menu latéral gauche (Drawer)
 class MenuPage extends StatelessWidget {
@@ -21,10 +23,7 @@ class MenuPage extends StatelessWidget {
       title: Text(titre, style: TextStyle(fontSize: 20)),
       onTap: () {
         Navigator.pop(context);
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => page),
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => page));
       },
     );
   }
@@ -47,6 +46,7 @@ class MenuPage extends StatelessWidget {
           ),
           _item(context, Icons.calculate, 'Calculatrice', Calculs()),
           _item(context, Icons.widgets, 'Les Widgets', LesWidgets()),
+          _item(context, Icons.school, 'Les TPs', LesTPs()),
           // Le bouton Accueil n'apparaît que si on n'est pas déjà sur l'accueil
           if (!surAccueil)
             ListTile(
