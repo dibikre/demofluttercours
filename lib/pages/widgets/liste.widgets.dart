@@ -3,6 +3,12 @@ import 'boutons/lesCommonboutons.dart';
 import 'floating/lesFloatingActionButtons.dart';
 import 'floating/extended/lesFabExtended.dart';
 import 'iconbutton/lesIconButton.dart';
+import 'segmentedbutton/lesSegmentedButton.dart';
+import 'chip/lesChips.dart';
+import 'controles/lesControles.dart';
+import 'textfield/lesTextField.dart';
+import 'indicateurs/lesIndicateurs.dart';
+import 'card/lesCards.dart';
 
 // Un widget présenté dans la section "Les Widgets"
 class WidgetItem {
@@ -44,5 +50,41 @@ const List<WidgetItem> listeWidgets = [
     description: 'Les 4 types, le bouton à bascule et la personnalisation',
     icone: Icons.touch_app,
     page: LesIconButton(),
+  ),
+  WidgetItem(
+    titre: 'SegmentedButton',
+    description: 'Sélection unique, multiple et personnalisation des segments',
+    icone: Icons.view_week,
+    page: LesSegmentedButton(),
+  ),
+  WidgetItem(
+    titre: 'Chip',
+    description: 'ActionChip, FilterChip, ChoiceChip, InputChip et styles',
+    icone: Icons.label,
+    page: LesChips(),
+  ),
+  WidgetItem(
+    titre: 'Switch & Checkbox',
+    description: 'Interrupteurs, cases à cocher classiques et tristate',
+    icone: Icons.toggle_on,
+    page: LesControles(),
+  ),
+  WidgetItem(
+    titre: 'TextField',
+    description: 'Champs de saisie, bordures, mot de passe et validation',
+    icone: Icons.text_fields,
+    page: LesTextField(),
+  ),
+  WidgetItem(
+    titre: 'Slider & Progression',
+    description: 'Curseurs continu/discret, RangeSlider et barres de progression',
+    icone: Icons.tune,
+    page: LesIndicateurs(),
+  ),
+  WidgetItem(
+    titre: 'Card & ListTile',
+    description: 'Les 3 variantes de Card, carte cliquable et ListTile',
+    icone: Icons.credit_card,
+    page: LesCards(),
   ),
 ];
